@@ -72,9 +72,11 @@ function removeContent() {
   }
 }
 
-const homeBtn = document.querySelector(".home-button");
-homeBtn.addEventListener('click', displayHomePage);
-const menuBtn = document.querySelector(".menu-button");
-menuBtn.addEventListener('click', displayMenuPage);
-const aboutBtn = document.querySelector(".about-button");
-aboutBtn.addEventListener('click', displayAboutPage);
+const initBtns = (() => {
+  const homeBtn = document.querySelector(".home-button");
+  homeBtn.addEventListener('click', displayHomePage);
+  const menuBtn = document.querySelector(".menu-button");
+  menuBtn.addEventListener('click', displayMenuPage);
+  const aboutBtn = document.querySelector(".about-button");
+  aboutBtn.addEventListener('click', displayAboutPage);
+})();
