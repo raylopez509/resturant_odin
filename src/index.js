@@ -1,4 +1,5 @@
 function displayHomePage() {
+  removeContent();
   const contentDiv = document.querySelector("#content");
   const title = document.createElement("div");
   title.textContent = "Tabletop Tavern";
@@ -48,6 +49,32 @@ function displayHomePage() {
   contentDiv.appendChild(phone);
 }
 
+function displayMenuPage() {
+  removeContent();
+  const contentDiv = document.querySelector("#content");
+  const testDiv = document.createElement("div");
+  testDiv.textContent = "[enter menu page here]"
+  contentDiv.appendChild(testDiv);
+}
+
+function displayAboutPage() {
+  removeContent();
+  const contentDiv = document.querySelector("#content");
+  const testDiv = document.createElement("div");
+  testDiv.textContent = "[enter about page here]"
+  contentDiv.appendChild(testDiv);
+}
+
+function removeContent() {
+  const contentDiv = document.querySelector("#content");
+  while(contentDiv.firstChild) {
+    contentDiv.removeChild(contentDiv.lastChild);
+  }
+}
+
 const homeBtn = document.querySelector(".home-button");
 homeBtn.addEventListener('click', displayHomePage);
-
+const menuBtn = document.querySelector(".menu-button");
+menuBtn.addEventListener('click', displayMenuPage);
+const aboutBtn = document.querySelector(".about-button");
+aboutBtn.addEventListener('click', displayAboutPage);
