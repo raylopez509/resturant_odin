@@ -24,10 +24,21 @@ header {
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
+  border: 5px solid #563232;
+  border-radius: 25px;
+  background-color: #ffc18c;
+  color: #563232;
 }
 
 #content {
-  max-width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: 1px solid red;
+}
+
+button {
+  border: 1px solid #563232;
+  border-radius: 3px;
+  color: #563232;
+  background-color: #e7cfb4;
 }
