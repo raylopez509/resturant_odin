@@ -27,7 +27,7 @@ function displayHomePage() {
     'Friday: 12pm-2am',
     'Saturday: 12pm-1am',
   ];
-  for (day of hoursArr) {
+  for (let day of hoursArr) {
     let time = document.createElement('li');
     time.textContent = day;
     hoursList.appendChild(time);
