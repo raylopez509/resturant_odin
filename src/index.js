@@ -18,3 +18,5 @@ const initBtns = (() => {
   const aboutBtn = document.querySelector('.about-button');
   aboutBtn.addEventListener('click', displayAboutPage);
 })();
+
+displayHomePage();

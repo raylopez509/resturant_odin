@@ -1,4 +1,5 @@
 import { removeContent } from "./index.js";
+
 export function displayHomePage() {
   removeContent();
   const contentDiv = document.querySelector('#content');
