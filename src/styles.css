@@ -1,3 +1,8 @@
+body {
+  margin: 0px;
+  background-image: url('background.png');
+}
+
 .title {
   font-family: 'Pirata One', serif;
   font-weight: 400;
@@ -28,12 +33,16 @@ header {
   border-radius: 25px;
   background-color: #ffc18c;
   color: #563232;
+  margin: 2rem;
 }
 
 #content {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  border: 1px solid red;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  border: 5px solid #563232;
+  border-radius: 25px;
+  background-color: #e7cfb4;
+  color: #563232;
 }
 
 button {
@@ -41,4 +50,9 @@ button {
   border-radius: 3px;
   color: #563232;
   background-color: #e7cfb4;
+  padding: 20px;
+}
+
+li {
+  list-style-type: none;
 }
